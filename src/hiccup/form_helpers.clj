@@ -8,7 +8,7 @@
 
 (ns hiccup.form-helpers
   "Functions for generating HTML forms and input fields."
-  (:use clojure.contrib.java-utils))
+  (:use [clojure.contrib.string :only (as-str)]))
 
 (defn- input-field
   "Creates a new <input> element."

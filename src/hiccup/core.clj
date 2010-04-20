@@ -10,7 +10,7 @@
   "Renders a tree of vectors into a string of HTML. Pre-compiles where
   possible."
   (:use clojure.contrib.def
-        clojure.contrib.java-utils)
+        [clojure.contrib.string :only (as-str)])
   (:import java.util.Map))
 
 (def *html-mode* :xml)
